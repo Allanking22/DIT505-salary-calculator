@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <div class="container">
+        <h1> Salary calculator</h1>
+        <div class="calculator-inputs">
+            <div class="inputs">
+                <label for="hourlyRate">hourlyRate: </label>
+                <input type="number" id="hourlyRate" class="hourly-Rate" min="0" value="1">
+            </div>
+        
+            <div class="inputs">
+                <label for="hoursperday">hours per day: </label>
+                <input type="number" id="hoursperday"min="1" max="24" value="1">
+                <span id="hours-num">1</span>
+            </div>
+        
+            <div class="inputs">
+                <label for="daysperweek">days per week: </label>
+                <input type="number" id="" class="daysperweek" min="1" max="7" value="1">
+                <span id="days-num">1</span>
+            </div>
+        </div>
+        <div class="calculations">
+            <h2>Salary Details: </h2>
+            <p> hourly amount: <span id="hourlyamount"></span></p>
+            <p> daily amount: <span id="dailyamount"></span></p>
+            <p> weekly amount: <span id="weeklyamount"></span></p>
+            <p> monthly amount: <span id="monthlyamount"></span></p>
+            <p> annual amount: <span id="annualamount"></span></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>    
